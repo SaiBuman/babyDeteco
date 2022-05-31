@@ -34,7 +34,7 @@ function draw() {
     if (status1 != "") {
         objectDetector.detect(video,gotResult) ;
         for (let i = 0; i < object.length; i++) {
-            if (object[i].label == person) {
+            if (object[i].label == "person") {
                document.getElementById("number_of_detected").innerHTML = "Baby found " ;
                song.play(); 
             }
